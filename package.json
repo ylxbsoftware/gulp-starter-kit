@@ -1,11 +1,44 @@
 {
-  "name": "gulp-starter-kit",
-  "version": "1.0.0",
-  "description": "gulp",
-  "main": "index.js",
+  "name": "qfang-broker-front",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server  --display-error-details --colors --content-base ./ --hot --host broker.qfang.com --port 80",
+    "watch": "webpack -w",
+    "build": "webpack --config ./webpack.prd.js"
   },
-  "author": "wanbao",
+  "devDependencies": {
+    "coala": "~0.0.8",
+    "css-loader": "^0.18.0",
+    "del": "^2.0.2",
+    "dot-loader": "^0.1.1",
+    "echarts": "^2.2.8",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-collector": "^1.0.2",
+    "gulp-ssh": "^0.5.5",
+    "gulp-zip": "^3.2.0",
+    "jquery-placeholder": "^2.1.1",
+    "run-sequence": "^1.1.4",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1",
+    "webpack-stream": "^2.1.1",
+    "wysiwyg.js": "^1.0.0"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "coala",
+    "qfang",
+    "broker"
+  ],
+  "author": "cheft",
   "license": "ISC"
 }
